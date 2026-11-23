@@ -1,11 +1,38 @@
 # Dependencies
+<<<<<<< HEAD
+node_modules
+=======
 node_modules/
 /.pnp
 .pnp.js
+>>>>>>> 1f7eb3bb65dbd9dd4386327b8a6aae07a29ebf9b
 
 # Environment variables
 .env
 .env.local
+<<<<<<< HEAD
+.env.*.local
+
+# SQLite databases & WAL artifacts
+*.sqlite
+*.sqlite3
+*.sqlite-shm
+*.sqlite-wal
+*.db
+
+# Build & test outputs
+dist
+build
+.vite
+coverage
+
+# Logs & OS clutter
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+=======
 .env.development.local
 .env.test.local
 .env.production.local
@@ -35,3 +62,4 @@ lerna-debug.log*
 .DS_Store
 Thumbs.db
 
+>>>>>>> 1f7eb3bb65dbd9dd4386327b8a6aae07a29ebf9b

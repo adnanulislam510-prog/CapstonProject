@@ -1,12 +1,23 @@
 {
   "name": "food-left-at-closing-time-backend",
   "version": "1.0.0",
+<<<<<<< HEAD
+  "description": "Backend API for Food Left at Closing Time — Closing-Time Surplus Food Rescue Platform",
+  "main": "server.js",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+=======
   "description": "Backend API for Food Left at Closing Time - SE 331 Capstone Project",
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
+>>>>>>> 1f7eb3bb65dbd9dd4386327b8a6aae07a29ebf9b
     "seed": "node seed.js"
   },
   "dependencies": {
@@ -14,10 +25,14 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+<<<<<<< HEAD
+    "jsonwebtoken": "^9.0.2"
+=======
     "jsonwebtoken": "^9.0.2",
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
+>>>>>>> 1f7eb3bb65dbd9dd4386327b8a6aae07a29ebf9b
   }
 }

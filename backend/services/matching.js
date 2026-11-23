@@ -1,4 +1,23 @@
 /**
+<<<<<<< HEAD
+ * Member 2 (`feat/claim-engine`) Placeholder:
+ * Will evaluate shelter cutoff_time, max_portions capacity, has_van tray compatibility,
+ * and 3-minute priority visibility holds for low-reliability shelters.
+ */
+function evaluateShelterEligibility(batch, shelterProfile, now = new Date()) {
+  // TODO (Member 2): Implement full constraint matching engine.
+  return {
+    can_claim: Boolean(batch && shelterProfile && now),
+    status: 'ELIGIBLE',
+    reasons: [],
+    priority_hold_seconds: 0,
+    available_at: batch ? batch.created_at : null,
+  };
+}
+
+module.exports = {
+  evaluateShelterEligibility,
+=======
  * =====================================================================
  * File: /backend/services/matching.js
  * Owner: Member 2 (feat/claim-engine)
@@ -21,4 +40,5 @@ function filterEligibleBatches(batches = [], shelterProfile = {}) {
 
 module.exports = {
   filterEligibleBatches
+>>>>>>> 1f7eb3bb65dbd9dd4386327b8a6aae07a29ebf9b
 };
