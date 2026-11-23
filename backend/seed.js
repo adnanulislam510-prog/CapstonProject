@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require('dotenv').config();
 const bcrypt = require('bcryptjs');
 const db = require('./db/database');
@@ -154,8 +155,40 @@ if (require.main === module) {
     })
     .catch((err) => {
       console.error('Failed to seed database:', err);
+=======
+/**
+ * =====================================================================
+ * File: /backend/seed.js
+ * Owner: Member 1 (feat/backend-core)
+ * Description: Empty seed script ready for demo data
+ * =====================================================================
+ */
+
+const db = require('./db/database');
+
+/**
+ * Populates initial demo restaurants, shelters, profiles, and batches
+ */
+async function seed() {
+  console.log('--- Seeding Food Rescue Database (Ready for Demo Data) ---');
+  // TODO: (Member 1) Add demo restaurants, shelters, shelter_profiles, and food_batches here
+}
+
+if (require.main === module) {
+  seed()
+    .then(() => {
+      console.log('Seed completed successfully.');
+      process.exit(0);
+    })
+    .catch((err) => {
+      console.error('Seed execution error:', err);
+>>>>>>> 1f7eb3bb65dbd9dd4386327b8a6aae07a29ebf9b
       process.exit(1);
     });
 }
 
+<<<<<<< HEAD
 module.exports = { seedDatabase, SEED_ACCOUNTS };
+=======
+module.exports = { seed };
+>>>>>>> 1f7eb3bb65dbd9dd4386327b8a6aae07a29ebf9b

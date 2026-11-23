@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const DEFAULT_PORTIONS = 20;
 const DEFAULT_PICKUP_LOCATION = 'Back gate';
 const DEFAULT_HOLD_HHMM = '23:30';
@@ -153,11 +154,36 @@ function parseFoodInput(rawText, fallbackLocation, fallbackHoldUntil, referenceD
     has_trays,
     hold_until,
     pickup_location,
+=======
+/**
+ * =====================================================================
+ * File: /backend/utils/parser.js
+ * Owner: Member 1 (feat/backend-core)
+ * Description: Natural language / structured food input parser
+ * =====================================================================
+ */
+
+/**
+ * Placeholder function to parse raw food descriptions into structured portions/items
+ * @param {string} rawText Raw input text describing surplus food
+ * @returns {Object} Structured food batch properties
+ */
+function parseFoodInput(rawText) {
+  // TODO: (Member 1) Implement parsing logic to extract total_portions, items, trays, allergens
+  return {
+    rawDescription: typeof rawText === 'string' ? rawText.trim() : '',
+    totalPortions: 0,
+    hasTrays: false
+>>>>>>> 1f7eb3bb65dbd9dd4386327b8a6aae07a29ebf9b
   };
 }
 
 module.exports = {
+<<<<<<< HEAD
   parseFoodInput,
   enforceFoodSafetyDeadline,
   buildTonightIso,
+=======
+  parseFoodInput
+>>>>>>> 1f7eb3bb65dbd9dd4386327b8a6aae07a29ebf9b
 };
